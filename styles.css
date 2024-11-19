@@ -35,14 +35,42 @@ body {
     height: 100px;
 }
 
+.social-links-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .social-links {
     background-color: hsl(0, 0%, 20%);
     padding: 10px 4px;
     margin: 5px;
     width: 80%;
-    text-align: center;
     border-radius: 8px;
     font-weight: 700;
+    box-shadow: none;
+    color: white;
+    border: none;
+    text-align: center;
+}
+
+.social-links:hover {
+    background-color: #0056b3;
+}
+
+.social-links a:focus {
+    outline: none;
+}
+
+.social-links:focus-within {
+    background-color: #0056b3;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
 
 .attribution { font-size: 11px; text-align: center; }
